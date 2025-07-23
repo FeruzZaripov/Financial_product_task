@@ -1,6 +1,6 @@
 Prerequisites
 Make sure you have the following installed on your computer:
--Docker
+-Docker,
 -Docker compose
 
 Steps to run the Project (Using Docker Only)
