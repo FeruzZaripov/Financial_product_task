@@ -15,7 +15,7 @@ public interface TransactionMapper {
     @Mapping(target = "id", source = "id")
     @Mapping(target = "amount", source = "amount")
     @Mapping(target = "description", source = "description")
-    @Mapping(target = "createdAt", source = "createdAt")
+    @Mapping(target = "createdAt", expression = "java(transaction.getCreatedAt())")
     TransactionResponseDto toDto(Transaction transaction);
 
 }
